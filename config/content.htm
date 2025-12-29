@@ -161,7 +161,14 @@
 </ol>
 <p><strong>draw applr(failed)</strong></p>
 <p>無法導入:</p>
-<p><a href="https://youtu.be/XpKkgpADx6Y">https://youtu.be/XpKkgpADx6Y</a></p>
+<p><a href="https://youtu.be/XpKkgpADx6Y">https://youtu.be/XpKkgpADx6Y<br/><br/></a></p>
+<h2>心得</h2>
+<p data-end="158" data-start="63">本次實作使用 Webots 機器人模擬平台，讓機器人能夠讀取既有影像資料，並依據影像資訊在虛擬畫板上描繪指定圖形，藉此熟悉 Webots 的模擬環境架構、控制器執行方式，以及機器人動作流程。</p>
+<p data-end="293" data-start="160">實作過程中，首先遇到 Webots 渲染系統無法啟動的問題，起因於顯示卡驅動與 OpenGL 相容性不足，導致模擬畫面無法正常顯示。透過調整系統圖形設定並更新顯示卡驅動後，成功啟動 Webots 模擬環境，並對 Webots 對硬體與圖形環境的需求有更進一步的理解。</p>
+<p data-end="389" data-start="295">其次，在執行機器人控制程式時，發現控制器的工作目錄與程式檔案路徑之間存在差異，造成外部資料無法正確讀取。經過路徑設定的調整後，對 Webots 控制器的執行邏輯與檔案結構有了更清楚的認識。</p>
+<p data-end="512" data-start="391">在後續實作中，雖然最終仍未能成功將蘋果圖形完整導入並實際繪製，但我仍依照教學流程，將相關教學影片完整觀看，並逐步整理與理解每個操作步驟與控制邏輯。透過對照教學內容與實作過程，進一步釐清 Webots 中座標轉換、動作規劃與模擬控制之間的關係。</p>
+<p data-end="618" data-start="514">整體而言，本次實作雖未完全達成預期成果，但透過實際操作與問題排除的過程，使我更熟悉 Webots 模擬平台的操作方式與系統架構，也提升了我在模擬環境中進行機器人控制與學習新工具的能力，為後續相關實作奠定基礎。</p>
+<p><a href="https://youtu.be/XpKkgpADx6Y"> </a></p>
 <h3><strong>webots 錯誤</strong></h3>
 <p><strong><br/></strong>Driver Version: R580 U5 (581.80) | WHQL<br/>Release Date: Tue Nov 04, 2025<br/>Operating System: Windows 10 64-bit,<br/>Windows 11<br/>Language: Chinese (Traditional)<br/>File Size: 712.77 MB<br/>By clicking the "Download" button, you are confirming that you have read and agree to be bound by the License For Customer Use of NVIDIA Software for use of the driver. The driver will begin downloading immediately after clicking on the "Download" button. NVIDIA recommends users update to the latest driver version.<br/><br/></p>
 <p data-end="540" data-start="518"><strong data-end="540" data-start="521">1. OpenGL 初始化失敗</strong></p>
