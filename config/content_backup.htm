@@ -32,7 +32,8 @@
 <p>後續再做一次有成功</p>
 <p><a href="https://youtu.be/hpwiInBvbLg">https://youtu.be/hpwiInBvbLg</a></p>
 <p><img alt="" height="354" src="/images/螢幕擷取畫面 2025-12-27 214447.png" width="671"/></p>
-<p></p>
+<p><span>測試將 SolidReference 從 joint4 轉移到 joint3(成功)</span></p>
+<p><a href="https://youtu.be/a1PRMPTzwj0">https://youtu.be/a1PRMPTzwj0</a></p>
 <h1>41123250</h1>
 <p>利用老師給的solvespace檔案繪製出五連桿機構，後續將步驟上傳。</p>
 <p><img alt="" height="399" src="/images/螢幕擷取畫面 2025-12-24 124353.png" width="800"/></p>
@@ -134,3 +135,160 @@
 <p>remote: Enumerating objects: 141, done.<br/>remote: Counting objects: 100% (133/133), done.<br/>remote: Compressing objects: 100% (33/33), done.<br/>remote: Total 80 (delta 53), reused 74 (delta 47), pack-reused 0 (from 0)<br/>Unpacking objects: 100% (80/80), 3.89 MiB | 16.82 MiB/s, done.<br/>From https://github.com/mdecad2025/2b-bg3<br/> * branch            main       -&gt; FETCH_HEAD<br/>   36c3d44..c6658e8  main       -&gt; origin/main<br/>Auto-merging config/content.htm<br/>CONFLICT (content): Merge conflict in config/content.htm<br/>Auto-merging config/content_backup.htm<br/>CONFLICT (content): Merge conflict in config/content_backup.htm<br/>CONFLICT (modify/delete): content/41123101.html deleted in HEAD and modified in c6658e85cb291c67c7daa24e4f39aa3aba067112.  Version c6658e85cb291c67c7daa24e4f39aa3aba067112 of content/41123101.html left in tree.<br/>CONFLICT (modify/delete): content/41123250.html deleted in HEAD and modified in c6658e85cb291c67c7daa24e4f39aa3aba067112.  Version c6658e85cb291c67c7daa24e4f39aa3aba067112 of content/41123250.html left in tree.<br/>CONFLICT (modify/delete): content/製作心得.html deleted in HEAD and modified in c6658e85cb291c67c7daa24e4f39aa3aba067112.  Version c6658e85cb291c67c7daa24e4f39aa3aba067112 of content/製作心得.html left in tree.<br/>CONFLICT (modify/delete): content/連桿影片.html deleted in HEAD and modified in c6658e85cb291c67c7daa24e4f39aa3aba067112.  Version c6658e85cb291c67c7daa24e4f39aa3aba067112 of content/連桿影片.html left in tree.<br/>Automatic merge failed; fix conflicts and then commit the result.</p>
 <p>=======<br/>我在做 git pull 時，Git 發現我本地的版本和 GitHub 遠端同時改到同一些檔案，而且修改內容互相衝突，所以自動合併失敗，必須由我來決定要用哪一邊的版本。像 config/content.htm 和 config/content_backup.htm 是內容衝突，content 裡那些 html 則是我本地刪掉但遠端有修改，Git 先把遠端版本留下來等我選擇。若是分組作業通常以 GitHub 為準，我可以依序執行 git checkout --theirs config/content.htm、git checkout --theirs config/content_backup.htm、git checkout --theirs content/41123101.html、git checkout --theirs content/41123250.html、git checkout --theirs content/製作心得.html、git checkout --theirs content/連桿影片.html，接著執行 git add .，最後 git commit -m "resolve merge conflicts" 就能完成合併；如果我要保留自己本地刪掉或修改的版本，則改用 --ours 或直接 git rm 對應檔案。</p>
 <h2>Webots</h2>
+<p><strong>link1</strong></p>
+<p>失敗:<a href="/cad2025 期末第一連桿(失敗">https://youtu.be/DbmewXZmEXs<img alt="cry" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/></a></p>
+<p>成功:<a href="https://youtu.be/1CoYs3QzBuM">https://youtu.be/1CoYs3QzBuM</a><img alt="embarassed" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-embarassed.gif"/></p>
+<p><img alt="" height="195" src="/images/螢幕擷取畫面 2025-12-30 012618.png" width="400"/></p>
+<p><strong>link2-3</strong></p>
+<p><a href="https://youtu.be/pX0K4W1R8tg">https://youtu.be/pX0K4W1R8tg</a></p>
+<p><img alt="" height="224" src="/images/螢幕擷取畫面 2025-12-30 013316.png" width="270"/></p>
+<p><strong>link4</strong></p>
+<p><a href="https://youtu.be/4g1QJX6JQLc">https://youtu.be/4g1QJX6JQLc</a></p>
+<p><img alt="" height="155" src="/images/螢幕擷取畫面 2025-12-30 013657.png" width="400"/></p>
+<p><strong>draw apple 剩下的步驟(用敘述的方式來完成</strong></p>
+<ol>
+<li>從電腦把draw_apple檔案移至controller資料夾下</li>
+<li><img alt="" height="431" src="/images/螢幕擷取畫面 2025-12-29 020539.png" width="330"/>把controllerc匯入draw_apple。supervisor的true打勾</li>
+<li>
+<p>存檔，Reload word。無法正常跑動，檢查問題</p>
+</li>
+<li>補link4 Solid下的physics NULL，add <span>physics<img alt="" height="275" src="/images/螢幕擷取畫面 2025-12-29 021556.png" width="334"/></span></li>
+<li>打開draw_apple.py檔<img alt="" height="715" src="/images/螢幕擷取畫面 2025-12-29 021804.png" width="512"/></li>
+<li></li>
+</ol>
+<p><strong>draw applr(failed)</strong></p>
+<p>無法導入:</p>
+<p><a href="https://youtu.be/XpKkgpADx6Y">https://youtu.be/XpKkgpADx6Y</a></p>
+<h3><strong>webots 錯誤</strong></h3>
+<p><strong><br/></strong>Driver Version: R580 U5 (581.80) | WHQL<br/>Release Date: Tue Nov 04, 2025<br/>Operating System: Windows 10 64-bit,<br/>Windows 11<br/>Language: Chinese (Traditional)<br/>File Size: 712.77 MB<br/>By clicking the "Download" button, you are confirming that you have read and agree to be bound by the License For Customer Use of NVIDIA Software for use of the driver. The driver will begin downloading immediately after clicking on the "Download" button. NVIDIA recommends users update to the latest driver version.<br/><br/></p>
+<p data-end="540" data-start="518"><strong data-end="540" data-start="521">1. OpenGL 初始化失敗</strong></p>
+<ul data-end="646" data-start="541">
+<li data-end="586" data-start="541">
+<p data-end="586" data-start="543">Webots 嘗試載入 OpenGL 軟體渲染 (<code data-end="580" data-start="568">opengl32sw</code>) 失敗</p>
+</li>
+<li data-end="646" data-start="587">
+<p data-end="646" data-start="589">系統無法解析 WGL / OpenGL 函數<br data-end="614" data-start="611"/>→<span> </span><strong data-end="646" data-start="616">代表你的電腦目前 OpenGL 功能無法使用或被禁用</strong></p>
+</li>
+</ul>
+<hr data-end="651" data-start="648"/>
+<p data-end="677" data-start="653"><strong data-end="677" data-start="656">2. 渲染系統無法啟動（關鍵錯誤）</strong></p>
+<ul data-end="720" data-start="678">
+<li data-end="720" data-start="678">
+<p data-end="720" data-start="680">Webots 無法建立 OpenGL 渲染環境<br data-end="706" data-start="703"/>→<span> </span><strong data-end="720" data-start="708">程式啟動直接中斷</strong></p>
+</li>
+</ul>
+<hr data-end="725" data-start="722"/>
+<p data-end="743" data-start="727"><strong data-end="743" data-start="730">3. 系統建議原因</strong></p>
+<ul data-end="806" data-start="744">
+<li data-end="757" data-start="744">
+<p data-end="757" data-start="746">檢查 GPU 能力</p>
+</li>
+<li data-end="771" data-start="758">
+<p data-end="771" data-start="760">安裝最新顯示卡驅動</p>
+</li>
+<li data-end="806" data-start="772">
+<p data-end="806" data-start="774">確認顯示卡符合 Webots 的最低需求（OpenGL 4.1）</p>
+</li>
+</ul>
+<hr data-end="811" data-start="808"/>
+<p data-end="827" data-start="813"><strong data-end="827" data-start="816">4. 次要錯誤</strong></p>
+<div class="sticky top-9">
+<div class="absolute end-0 bottom-0 flex h-9 items-center pe-2">
+<div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span><span class="hljs-symbol">QWaitCondition:</span></span><span><span> </span>Destroyed<span> </span></span><span><span class="hljs-keyword">while</span></span><span><span> </span>threads are still waiting</span></span></code></div>
+<p data-end="936" data-start="894">→ 因為渲染系統沒啟動，背景執行緒被強制終止<br data-end="919" data-start="916"/>→<span> </span><strong data-end="936" data-start="921">屬於連帶錯誤，不是主因</strong></p>
+<p>針對沒有獨立顯卡的電腦，在學校階段希望用於機電資產品開發的可攜 Python、CAD 與 機電模擬程式環境，首推<span> </span><a aria-label="連結 http://229.cycu.org/portable_2026_w_gogs.7z" class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="http://229.cycu.org/portable_2026_w_gogs.7z" id="menurdd" rel="noreferrer noopener" target="_blank" title="http://229.cycu.org/portable_2026_w_gogs.7z">http://229.cycu.org/portable_2026_w_gogs.7z</a><span> </span>。</p>
+<h3> teams上解決辦法</h3>
+<p> <a aria-label="連結 https://gogs.io/" class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://gogs.io/" id="menurdf" rel="noreferrer noopener" target="_blank" title="https://gogs.io/">https://gogs.io/</a><span> </span>是一套簡潔的類 Github 系統，十人以內的協同設計，可以直接使用 SQLite 資料庫儲存 Repository 資料，十人以上的協同設計分散式版次管理則可以改用<span> </span><a aria-label="連結 https://www.postgresql.org/" class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://www.postgresql.org/" id="menurdh" rel="noreferrer noopener" target="_blank" title="https://www.postgresql.org/">https://www.postgresql.org/</a><span> </span>, 將 Gogs 伺服器與 Database 伺服器隔開，以提高連線效率。</p>
+<p>機電模擬部分，若電腦有獨立顯卡可以使用 Webots:<span> </span><a aria-label="連結 https://cyberbotics.com/" class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://cyberbotics.com/" id="menurdj" rel="noreferrer noopener" target="_blank" title="https://cyberbotics.com/">https://cyberbotics.com/</a><span> </span>, 若電腦無獨立顯卡，則建議採用 CoppeliaSim:<span> </span><a aria-label="連結 https://www.coppeliarobotics.com/" class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://www.coppeliarobotics.com/" id="menurdl" rel="noreferrer noopener" target="_blank" title="https://www.coppeliarobotics.com/">https://www.coppeliarobotics.com/</a></p>
+<p></p>
+<h2>第二次錯誤</h2>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">Critical: Failed to load opengl32sw (?曆??唳?摰?璅∠???</p>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">Warning: Failed to load and resolve WGL/OpenGL functions</p>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">FATAL: Webots could not initialize the rendering system.</p>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">Please check your GPU abilities and install the latest graphics drivers.</p>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">Please do also check that your graphics hardware meets the requirements specified in the User Guide.</p>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted">Warning: QWaitCondition: Destroyed while threads are still waiting<br/><br/></p>
+<blockquote>
+<p _ngcontent-ng-c4040723033="" class="query-text-line ng-star-inserted"><strong>AI問題解決辦法:</strong></p>
+</blockquote>
+<div _ngcontent-ng-c411344654="" aria-busy="false" aria-live="off" class="markdown markdown-main-panel stronger enable-updated-hr-color" dir="ltr" id="model-response-message-contentr_36b1f2b8d7cec7b8" inline-copy-host="">
+<p data-path-to-node="0">既然你的筆電配備了<span> </span><b data-index-in-node="10" data-path-to-node="0">NVIDIA GeForce MX350</b><span> </span>獨立顯示卡，那麼解決這個問題的關鍵就在於：<b data-index-in-node="52" data-path-to-node="0">「強制讓 Webots 使用 NVIDIA 顯卡運作，而不是預設的 Intel 內顯。」</b></p>
+<p data-path-to-node="1">目前的錯誤訊息是因為 Webots 嘗試調用 Intel 內顯的 OpenGL 失敗，且系統找不到軟體渲染（opengl32sw）的備援。以下是針對 MX350 筆電的具體解決方案：</p>
+<hr data-path-to-node="2"/>
+<h3 data-path-to-node="3">1. 透過 Windows 設定強制指定 GPU</h3>
+<p data-path-to-node="4">這是目前 Windows 10/11 最有效的設定方式：</p>
+<ol data-path-to-node="5" start="1">
+<li>
+<p data-path-to-node="5,0,0">開啟 Windows<span> </span><b data-index-in-node="11" data-path-to-node="5,0,0">「設定」</b><span> </span>-&gt;<span> </span><b data-index-in-node="19" data-path-to-node="5,0,0">「系統」</b><span> </span>-&gt;<span> </span><b data-index-in-node="27" data-path-to-node="5,0,0">「顯示器」</b>。</p>
+</li>
+<li>
+<p data-path-to-node="5,1,0">捲動到最下方，點擊<span> </span><b data-index-in-node="10" data-path-to-node="5,1,0">「圖形設定」 (Graphics Settings)</b>。</p>
+</li>
+<li>
+<p data-path-to-node="5,2,0">在「選擇要設定偏好設定的應用程式」下選擇<span> </span><b data-index-in-node="21" data-path-to-node="5,2,0">「桌面應用程式」</b>，然後點擊<span> </span><b data-index-in-node="35" data-path-to-node="5,2,0">「瀏覽」</b>。</p>
+</li>
+<li>
+<p data-path-to-node="5,3,0">尋找 Webots 的安裝路徑（預設通常在：<code data-index-in-node="22" data-path-to-node="5,3,0">C:\Program Files\Webots\msys64\mingw64\bin\webots.exe</code>）。</p>
+</li>
+<li>
+<p data-path-to-node="5,4,0">選中<span> </span><code data-index-in-node="3" data-path-to-node="5,4,0">webots.exe</code><span> </span>後點擊「新增」。</p>
+</li>
+<li>
+<p data-path-to-node="5,5,0">點擊清單中的 Webots，選擇<span> </span><b data-index-in-node="17" data-path-to-node="5,5,0">「選項」</b>，並將其設定為<span> </span><b data-index-in-node="29" data-path-to-node="5,5,0">「高效能」 (High Performance)</b>。這會強制它使用<span> </span><b data-index-in-node="62" data-path-to-node="5,5,0">NVIDIA GeForce MX350</b>。</p>
+</li>
+</ol>
+<h3 data-path-to-node="6">2. NVIDIA 控制面板設定</h3>
+<p data-path-to-node="7">為了確保 Webots 所有的相關元件都使用獨顯，請調整 NVIDIA 面板：</p>
+<ol data-path-to-node="8" start="1">
+<li>
+<p data-path-to-node="8,0,0">在桌面空白處按右鍵，開啟<span> </span><b data-index-in-node="13" data-path-to-node="8,0,0">「NVIDIA 控制面板」</b>。</p>
+</li>
+<li>
+<p data-path-to-node="8,1,0">點擊左側<span> </span><b data-index-in-node="5" data-path-to-node="8,1,0">「管理 3D 設定」</b>。</p>
+</li>
+<li>
+<p data-path-to-node="8,2,0">切換到<span> </span><b data-index-in-node="4" data-path-to-node="8,2,0">「程式設定」</b><span> </span>分頁。</p>
+</li>
+<li>
+<p data-path-to-node="8,3,0">點擊「新增」，找到 Webots（如果沒看到，按瀏覽手動加入）。</p>
+</li>
+<li>
+<p data-path-to-node="8,4,0">在「為此程式選擇偏好的圖形處理器」下拉選單中，選擇<span> </span><b data-index-in-node="26" data-path-to-node="8,4,0">「高效能 NVIDIA 處理器」</b>。</p>
+</li>
+<li>
+<p data-path-to-node="8,5,0">在下方設定清單中，將<span> </span><b data-index-in-node="11" data-path-to-node="8,5,0">「電源管理模式」</b><span> </span>改為<span> </span><b data-index-in-node="23" data-path-to-node="8,5,0">「慣用的最大效能」</b>。</p>
+</li>
+</ol>
+<h3 data-path-to-node="9">3. 更新 NVIDIA 驅動程式</h3>
+<p data-path-to-node="10">MX350 屬於比較主流的入門獨顯，如果驅動程式太舊，OpenGL 3.3+ 的支援可能會有 Bug：</p>
+<ul data-path-to-node="11">
+<li>
+<p data-path-to-node="11,0,0">請前往<span> </span><response-element class="" ng-version="0.0.0-PLACEHOLDER"><link-block _nghost-ng-c2006642325="" class="ng-star-inserted"><a _ngcontent-ng-c2006642325="" _nghost-ng-c3801223203="" class="ng-star-inserted" data-hveid="0" data-ved="0CAAQ_4QMahcKEwiqg-W8uduRAxUAAAAAHQAAAAAQTg" decode-data-ved="1" externallink="" href="https://www.nvidia.com.tw/Download/index.aspx?lang=tw" jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_36b1f2b8d7cec7b8","c_fc5fa5ca9ab5dac6",null,"rc_193decd3e767b499",null,null,"zh-Hant",null,1,null,null,1,0]]' rel="noopener" target="_blank">NVIDIA 官網驅動程式下載</a></link-block></response-element>。</p>
+</li>
+<li>
+<p data-path-to-node="11,1,0">產品類型選<span> </span><b data-index-in-node="6" data-path-to-node="11,1,0">GeForce</b><span> </span>-&gt; 系列選<span> </span><b data-index-in-node="21" data-path-to-node="11,1,0">GeForce MX300 Series (Notebooks)</b><span> </span>-&gt; 產品選<span> </span><b data-index-in-node="61" data-path-to-node="11,1,0">GeForce MX350</b>。</p>
+</li>
+<li>
+<p data-path-to-node="11,2,0">安裝後，建議在安裝程式中選擇「執行清潔安裝」 (Clean Install) 以清除舊有衝突。</p>
+</li>
+</ul>
+<h3 data-path-to-node="12">4. 嘗試 Webots 安全模式啟動</h3>
+<p data-path-to-node="13">如果 Webots 還是開不起來，可以嘗試用「低圖形要求」模式進入，再手動關閉可能導致崩潰的功能：</p>
+<ul data-path-to-node="14">
+<li>
+<p data-path-to-node="14,0,0">按住鍵盤上的<span> </span><b data-index-in-node="7" data-path-to-node="14,0,0"><code data-index-in-node="7" data-path-to-node="14,0,0">Shift</code><span> </span>鍵</b>，然後雙擊開啟 Webots。這會啟動安全模式，停用部分硬體加速。</p>
+</li>
+<li>
+<p data-path-to-node="14,1,0">進入後，到<span> </span><b data-index-in-node="6" data-path-to-node="14,1,0">File -&gt; Preferences -&gt; OpenGL</b>，將「Texture Quality」降為<span> </span><b data-index-in-node="57" data-path-to-node="14,1,0">Low</b>，並關閉<span> </span><b data-index-in-node="65" data-path-to-node="14,1,0">Ambient Occlusion</b>。</p>
+</li>
+</ul>
+<hr data-path-to-node="15"/>
+<blockquote data-path-to-node="16">
+<p data-path-to-node="16,0"><b data-index-in-node="0" data-path-to-node="16,0">注意：</b><span> </span>如果你是在「遠端桌面」環境下操作（例如使用 Windows 內建遠端連線），OpenGL 驅動會失效導致此錯誤。請務必在筆電本機螢幕上操作。</p>
+</blockquote>
+<p></p>
+<p data-path-to-node="18"></p>
+</div>
